@@ -1,55 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Grandstander:ital,wght@0,300;1,200&family=Grenze+Gotisch:wght@200;300;500&family=Lemonada:wght@300;400&display=swap');
 #description{
-background: rgb(231, 160, 135);
+    font-family:'Lemonada', cursive; 
+    /* font-weight: 200; */
+    font-size: 0.8em;
 height: 60%;
 padding: 7%;
 margin-top: 0;
 }
+span{
+    font-weight: 300;
+}
 h1{
     font-size: 3em;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+    position:relative;
 }
 #heading{
+ 
+    background: orange;
     margin-bottom: 0;
-    font-size: 1.6em;
+    margin-top: 0;
+    padding: 15px;
+    font-size: 1.2em;
 }
 section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position:relative;
     width: 50vw;
     height: 50vw;
-    background: rgb(247, 119, 73);
+    background-image: url("./imgs/rotated_642e5ccf8038ba8a4124dfd3f620297c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
     width:50vw;
     margin-bottom: 0;
 }
 body{
     font-size: 1.5em;
     display: flex;
+    /* position:relative; */
+    color: darkred;
     height: 100vh;
+    margin:0;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: rgb(230, 208, 201);
+    background-image: url("./imgs/Microsoft-Powerpoint-Background-Templates-600x448.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     align-items: center;
 }
-
-@media only screen and (max-width: 950px) {
-     body {
-      background-color: lightblue;
-      font-size: 1em;
-    } 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.527);
+  
+}
+@media only screen and (min-width: 1000px) {
+    body { font-size: 2em;} 
+   section{ height: 50vh;}
+}
+@media only screen and (max-width:950px) {
+   section{
+       width: 60vw;
+       height: 50vh;
+   }
+ }
+ @media only screen and (max-width:900px) {
+   section{
+       width: 65vw;
+       height: 50vh;
+   }
+ }
+ @media only screen and (max-width:850px) {
+   section{
+       width: 67vw;
+       height: 50vh;
+   }
+ }
+ @media only screen and (max-width:800px) { 
+   section{
+       width: 70vw;
+       height: 50vh;
+   }
+ }
+@media only screen and (max-width:700px) {
     section{
         width: 80vw;
         height: 50vh;
     }
-
-
-  }
-  @media only screen and (min-width: 1100px) {
-     body {
-         font-size: 2em;
-      /* background-color:rgb(175, 240, 175); */
-    } 
+ }
+@media only screen and (max-width: 550px) {
     section{
-        
-        height: 50vh;
-    }
-
-
-  }
+       width: 100vw;
+       height: 50vh;
+   }
+ }

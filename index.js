@@ -3,6 +3,7 @@ console.log("welcomex3")
 var startTime = 10
 var endTime = 1
 var timezoneArray= ["PST", "MT", "CST", "EST"]
+var linkId= "743 049 914"
 
 function timeZoneGenerator (time, parent){
        console.log(time)
@@ -31,12 +32,16 @@ section.append(heading)
 
 var description = document.createElement("h3")
 description.id = "description"
-description.textContent = `
-From `
+description.append("From: ")
 timeZoneGenerator(startTime, description)
-description.append(document.createElement("div"))
-description.append("Until ")
+description.append(document.createElement("br"))
+
+description.append("Until: ")
 timeZoneGenerator(endTime, description)
+description.append(document.createElement("br"))
+
+description.append(`Meeting ID: ${linkId}`)
+
     // ${startTime}${startTime < 12? "am": "pm"} PST/
     // ${startTime+1}${startTime+1 < 12? "am": "pm"}  MT/
     // ${startTime+2}${startTime+2 < 12? "am": "pm"}  CST /

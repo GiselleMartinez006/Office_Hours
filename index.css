@@ -109,19 +109,7 @@ body{
  main{
      width:100vw;
  }
- summary h3{
-     display: inline;
- }
- ul{
-     list-style-type: none;
-     
- }
- details{text-align: left;
-    margin-left: 35vw;}
 
-#cheatsheetsMain{
-    min-height: 30%;
-}
 
 .officehours, .contacts{
     width: 100%;

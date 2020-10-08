@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Grandstander:ital,wght@0,300;1,200&family=Grenze+Gotisch:wght@200;300;500&family=Lemonada:wght@300;400&display=swap');
+
 nav {
     width: 100vw;
     position: fixed;
@@ -6,6 +8,16 @@ nav {
     justify-content: space-evenly;
     height: 5%;
     margin-bottom: 2%;
+    background: rgba(255, 166, 0, 0.397);
+    border-bottom-style: double;
+    border-bottom-color: orangered;
+    border-bottom-width: 7px ;
+
+}
+nav a {
+    font-family: 'Grenze Gotisch';
+    text-decoration: none;
+    color: orangered;
 }
 header{
     width: 100vw;

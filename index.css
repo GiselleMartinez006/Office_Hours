@@ -14,6 +14,8 @@ h1{
     font-size: 3em;
     font-family: 'Grenze Gotisch', cursive;
     font-weight: 300;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     position:relative;
 }
 #heading{
@@ -24,83 +26,125 @@ h1{
     padding: 15px;
     font-size: 1.2em;
 }
-section{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position:relative;
-    width: 50vw;
-    height: 50vw;
-    background-image: url("./imgs/rotated_642e5ccf8038ba8a4124dfd3f620297c.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    width:50vw;
-    margin-bottom: 0;
-}
+
 body{
     font-size: 1.5em;
     display: flex;
     /* position:relative; */
     color: darkred;
     height: 100vh;
+    width: 100vw;
     margin:0;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
-    background-image: url("./imgs/Microsoft-Powerpoint-Background-Templates-600x448.jpg");
+    background-image: url("./imgs/autumn-background-natural-leaves-bright-sunlight-eps-vector-file-136758009.jpg");
     background-repeat: no-repeat;
+
     background-size: cover;
     
     align-items: center;
 }
-body::before {
+/* body::before {
     content: "";
     position: absolute;
+    height:100%;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     background-color: rgba(255, 255, 255, 0.527);
   
-}
+} */
 @media only screen and (min-width: 1000px) {
     body { font-size: 2em;} 
-   section{ height: 50vh;}
+   .officehours{ height: 50vh;}
 }
 @media only screen and (max-width:950px) {
-   section{
+   .officehours{
        width: 60vw;
        height: 50vh;
    }
  }
  @media only screen and (max-width:900px) {
-   section{
+   .officehours{
        width: 65vw;
        height: 50vh;
    }
  }
  @media only screen and (max-width:850px) {
-   section{
+   .officehours{
        width: 67vw;
        height: 50vh;
    }
  }
  @media only screen and (max-width:800px) { 
-   section{
+   .officehours{
        width: 70vw;
        height: 50vh;
    }
  }
 @media only screen and (max-width:700px) {
-    section{
+    .officehours{
         width: 80vw;
         height: 50vh;
     }
  }
 @media only screen and (max-width: 550px) {
-    section{
+    .officehours{
        width: 100vw;
        height: 50vh;
    }
  }
+
+ details, h3, h2{
+     position: relative;
+ }
+ 
+ h3, h2{
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 300;
+ }
+
+ main{
+     width:100vw;
+ }
+ summary h3{
+     display: inline;
+ }
+ ul{
+     list-style-type: none;
+     
+ }
+ details{text-align: left;
+    margin-left: 35vw;}
+
+#cheatsheetsMain{
+    min-height: 30%;
+}
+
+.officehours, .contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section{
+    width: 40vw;
+    border-radius: 10%;
+    position:relative;
+    background: rgba(241, 208, 146, 0.39);
+    /* background-image: url("./imgs/rotated_642e5ccf8038ba8a4124dfd3f620297c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-attachment: fixed; */
+border: solid 2px orange;
+    margin-bottom: 0;
+}
+ body>div {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.466);
+}
+section div h3 span {
+    font-size: 0.75em;
+}

@@ -131,8 +131,12 @@ border: solid 2px orange;
 }
  body>div {
     height: 100%;
-    background: rgba(255, 255, 255, 0.466);
+    background: rgba(255, 255, 255, 0.658);
 }
 section div h3 span {
     font-size: 0.75em;
 }
+/* .questions {
+    height:100%;
+    background: rgba(255, 255, 255, 0.623);
+} */

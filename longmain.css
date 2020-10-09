@@ -31,10 +31,10 @@
   }
 body{
    height: auto;
-background-size: auto;
+background-size: cover;
     /* background-image: url("./imgs/autumn-background-natural-leaves-bright-sunlight-eps-vector-file-136758009.jpg"); */
-    background-image: url("./imgs/symmetricbackground.jpg");
-   background-repeat: repeat;
+    background-image: url("./imgs/32611589-stock-vector-orange-autumn-background-with-leaves-pattern-.jpg");
+   background-repeat: repeat-y;
 
 }
 /* body div{
@@ -43,11 +43,20 @@ background-size: auto;
     background-repeat: repeat-y;
 } */
 body>div {
-    position:fixed;background-color: rgba(255, 255, 255, 0.212); top:0; left:0; width:100%; height:100%; 
+    position:fixed;background-color: rgba(255, 255, 255, 0.5); top:0; left:0; width:100%; height:100%; 
     /* overflow-y:scroll */
 }
-details>summary:focus{
+details>summary:focus {
     border: red solid 5px;
+}
+.questions h3{
+    margin: 5px;
+}
+h3{
+    margin: 25px;
+}
+details[open] h3{
+    margin: 0px;
 }
 details ul {
     margin-top: 0px;
@@ -58,10 +67,10 @@ details ul {
         position: static;
     }
 details[open]{
-    background:rgba(255, 255, 255, 0.507);
+    background:rgba(255, 166, 0, 0.445);
 }
 summary h3{
-    margin-left: 35vw;;
+    text-align: center;
     display: inline;
 }
 ul{
@@ -76,10 +85,13 @@ details > summary::-webkit-details-marker {
     display: none;
   }
 details{
-    background:rgba(255, 255, 255, 0.507);
+    background:orange;
     text-align: left;
    }
-
+details summary {
+    display:flex;
+    justify-content: center;
+}
 #cheatsheetsMain{
    min-height: 30%;
 }

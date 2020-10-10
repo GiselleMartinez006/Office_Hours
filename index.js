@@ -4,7 +4,7 @@ console.log(document.getElementsByTagName("footer")[0].className)
   if (document.getElementsByTagName("footer")[0].className === "officehours"){
     var timezoneArray= ["PST", "MT", "CST", "EST"]
 
-    var sundayStartTime = 10
+    var sundayStartTime = 11
     var sundayEndTime = 13
     var sundayLinkId= "743 049 914"
 

@@ -1,7 +1,10 @@
 console.log("welcomex3")
-console.log(document.getElementsByTagName("footer")[0].className)
+document.body.addEventListener("dragstart", ()=>{
+  console.log("dragging? ")
+})
+console.log(document.getElementsByTagName("main")[0].className)
 
-  if (document.getElementsByTagName("footer")[0].className === "officehours"){
+  if (document.getElementsByTagName("main")[0].className === "officehours"){
     var timezoneArray= ["PST", "MT", "CST", "EST"]
 
     var sundayStartTime = 11
@@ -29,7 +32,7 @@ console.log(document.getElementsByTagName("footer")[0].className)
        }
     
 function renderLabel(day, startTime, endTime, linkId) {var section = document.createElement("section")
-document.getElementsByTagName("footer")[0].append(section)
+document.getElementsByTagName("main")[0].append(section)
 
 var div = document.createElement("div")
 section.append(div)
@@ -62,14 +65,14 @@ renderLabel("Saturday", saturdayStartTime, saturdayEndTime, saturdayLinkId)
 renderLabel("Sunday", sundayStartTime, sundayEndTime, sundayLinkId)
    } 
 
-   if (document.getElementsByTagName("footer")[0].className === "contacts"){
+   if (document.getElementsByTagName("main")[0].className === "contacts"){
    var academicConsultantsInfo = [{name:"Gary Fishback", phone:"(940)-536-3370", slackUsername:"Gary Fishback", "email": "gary.fishback@bryanuniversity.edu", link:"https://academicassistance.as.me/?calendarID=3737347"}, 
   {name:"Giselle Martinez-Sanchez", phone:"(786)-265-8870", slackUsername:"Giselle Martinez-Sanchez", email: "giselle.sanchez@bryanuniversity.edu", link: "https://academicassistance.as.me/schedule.php?appointmentType=12301095"}]
     // Gary Fishback Contact Info:  // Phone: (940)-536-3370    // Slack Username: Gary Fishback    // E-mail: gary.fishback@bryanuniversity.edu    // Book a session at: https://academicassistance.as.me/?calendarID=3737347 (Links to an external site.)         // Giselle Martinez-Sanchez Contact Info:    // Phone: (786)-265-8870    // Slack Username: Giselle Martinez-Sanchez    // E-mail: giselle.sanchez@bryanuniversity.edu     // Book a session at: Link
     
     
     function renderLabel(name, phone, slack, email, link) {var section = document.createElement("section")
-    document.getElementsByTagName("footer")[0].append(section)
+    document.getElementsByTagName("main")[0].append(section)
     
     var div = document.createElement("div")
     section.append(div)

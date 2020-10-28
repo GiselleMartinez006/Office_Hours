@@ -1,0 +1,41 @@
+
+ /* @media only screen and (max-width:900px) {
+   .officehours{
+       width: 65vw;
+       height: 50vh;
+   }
+ } */
+ /* @media only screen and (max-width:850px) {
+   .officehours{
+       width: 67vw;
+       height: 50vh;
+   }
+ }
+ @media only screen and (max-width:800px) { 
+   .officehours{
+       width: 70vw;
+       height: 50vh;
+   }
+ }
+@media only screen and (max-width:700px) {
+    .officehours{
+        width: 80vw;
+        height: 50vh;
+    }
+ }
+@media only screen and (max-width: 550px) {
+    .officehours{
+       width: 100vw;
+       height: 50vh;
+   }
+ } */
+ #mainHeading {
+     position: relative;
+     width: 60%;
+     text-align: center;
+     top: 30%;
+     margin: 20vw;
+     bottom: 50%;
+     margin-top: 0;
+     margin-bottom: 0;
+ }

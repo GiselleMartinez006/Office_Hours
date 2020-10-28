@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Grandstander:ital,wght@0,300;1,200&family=Grenze+Gotisch:wght@200;300;500&family=Lemonada:wght@300;400&display=swap');
 h1, h2, h3{
     font-size: 5vw;
-    color: greenyellow;
+    
     /* font-family: 'Grenze Gotisch', cursive; */
     font-weight: 300;
     border-top-left-radius: 50px;

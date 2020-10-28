@@ -2,7 +2,7 @@
 h1{
     font-size: 5vw;
     /* font-family: 'Grenze Gotisch', cursive; */
-    /* font-weight: 300; */
+    font-weight: 300;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position:relative;

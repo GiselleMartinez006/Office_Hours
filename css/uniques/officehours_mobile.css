@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Grandstander:ital,wght@0,300;1,200&family=Grenze+Gotisch:wght@200;300;500&family=Lemonada:wght@300;400&display=swap');
-
+h1{
+    font-size: 5vw;
+    /* font-family: 'Grenze Gotisch', cursive; */
+    /* font-weight: 300; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position:relative;
+}
 body{
     font-size: 1.5em;
     /* display: flex; */
@@ -15,7 +22,7 @@ body{
     background-repeat: no-repeat;
 
     background-size: cover;
-    
+    font-family:'Lemonada', cursive; 
     align-items: center;
 }
 body>div {
@@ -28,14 +35,7 @@ body>div {
 
 
 
-h1{
-    font-size: 8vw;
-    font-family: 'Grenze Gotisch', cursive;
-    font-weight: 300;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    position:relative;
-}
+
 #heading{
  
     background: orange;

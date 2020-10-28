@@ -37,18 +37,7 @@ span{
     flex-direction: row;
     justify-content: space-evenly;
 }
-section{
-    width: 40vw;
-    border-radius: 10%;
-    position:relative;
-    background: rgba(241, 208, 146, 0.39);
-    /* background-image: url("./imgs/rotated_642e5ccf8038ba8a4124dfd3f620297c.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-attachment: fixed; */
-border: solid 2px orange;
-    margin-bottom: 0;
-}
+
  body>div {
     height: 100%;
     background: rgba(255, 255, 255, 0.658);

@@ -48,8 +48,21 @@ body>div {
 #description{
     font-family:'Lemonada', cursive; 
     /* font-weight: 200; */
-    font-size: 0.8em;
+    font-size: 3vw;
 height: 60%;
 padding: 7%;
 margin-top: 0;
+}
+
+section{
+    /* width: 40vw; */
+    border-radius: 10%;
+    /* position:relative; */
+    background: rgba(241, 208, 146, 0.39);
+    /* background-image: url("./imgs/rotated_642e5ccf8038ba8a4124dfd3f620297c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-attachment: fixed; */
+border: solid 2px orange;
+    margin-bottom: 5vh;
 }

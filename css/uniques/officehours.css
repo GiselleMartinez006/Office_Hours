@@ -84,11 +84,16 @@ border: solid 2px orange;
         overflow: hidden;
     }
     .officehours{
+        margin-top: 5vw;
         display: flex;
+        justify-content: space-evenly;
    }
    #description{
-       font-size: 2vw;
+       font-size: 1.5vw;
        
+   }
+   #heading{
+       font-size: 2vw;
    }
    section{
        margin: 25px;
@@ -98,4 +103,11 @@ border: solid 2px orange;
        margin-top: -10px;
    }
   }
+  
+@media only screen and (min-width:1100px) and (max-width:1400px) {
+.officehours{
+    /* flex-direction: column; */
+    margin-top: 15vw;
+}
+}
  

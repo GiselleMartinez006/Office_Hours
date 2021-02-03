@@ -9,10 +9,16 @@ app.use(cors());
 
 app.use(express.json());
 app.use(morgan("dev"));
-
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://blueHawk:774107@cluster0.es6oo.gcp.mongodb.net/test?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true ,useUnifiedTopology: true,  useCreateIndex: true, useFindAndModify: false,});
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
 mongoose.connect(
-  "mongodb://localhost:27017/voterdb",
-  {
+uri,  {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -22,9 +28,29 @@ mongoose.connect(
     return console.log("Connected to the voter DB");
   }
 );
+const User = require("./models/user");
 
+emptyhandling = (found, res) => {
+  !found.length //is 2 equal signs in purpose
+    ? res.status(204).send()
+    : res.status(200).send(found);
+};
+
+//get all users
+app.get("/usertest", (req, res, next) => {
+  User.find((err, users) => {
+    if (err) {
+      res.status(500);
+      return next(err);
+    }
+    return emptyhandling(users, res);
+  });
+});
 app.get("/", function (req, res, next) {
-  res.json({ msg: "This is CORS-enabled for all origins!" });
+  res.send({ msg: "This is CORS-enabled for all origins!" });
+});
+app.get("/test", function (req, res, next) {
+  res.send("Testingsx3");
 });
 
 app.use("/auth", require("./routes/authRouter"));
@@ -43,7 +69,7 @@ app.use((err, req, res, next) => {
   }
   return res.send({ errMsg: err.message });
 });
-var port = 3030;
+var port = (process.env.PORT || 3000);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}; with CORS anabled`);
 });

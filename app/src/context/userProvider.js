@@ -38,7 +38,7 @@ export default function UserProvider(props) {
     };
     console.log(newUser);
 
-    Axios.post("http://localhost:3030/auth/signup", newUser)
+    Axios.post("https://ac-office-hours.herokuapp.com/auth/signup", newUser)
       .then((res) => {
         console.log(res.data);
 
@@ -63,7 +63,7 @@ export default function UserProvider(props) {
   function login(credentials) {
     console.log(credentials);
 
-    Axios.post("http://localhost:3030/auth/", credentials)
+    Axios.post("https://ac-office-hours.herokuapp.com/auth/", credentials)
       .then((res) => {
         const { user, token } = res.data;
         console.log(res.data);
@@ -105,7 +105,7 @@ export default function UserProvider(props) {
 
   function getIssues() {
     axios
-      .get("http://localhost:3030/app/issues")
+      .get("https://ac-office-hours.herokuapp.com/app/issues")
       .then((res) => {
         console.log(res.data);
         setUserState((prevState) => ({

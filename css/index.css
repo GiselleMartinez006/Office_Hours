@@ -1,41 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Grandstander:ital,wght@0,300;1,200&family=Grenze+Gotisch:wght@200;300;500&family=Lemonada:wght@300;400&display=swap');
 
- /* @media only screen and (max-width:900px) {
-   .officehours{
-       width: 65vw;
-       height: 50vh;
-   }
- } */
- /* @media only screen and (max-width:850px) {
-   .officehours{
-       width: 67vw;
-       height: 50vh;
-   }
- }
- @media only screen and (max-width:800px) { 
-   .officehours{
-       width: 70vw;
-       height: 50vh;
-   }
- }
-@media only screen and (max-width:700px) {
-    .officehours{
-        width: 80vw;
-        height: 50vh;
-    }
- }
-@media only screen and (max-width: 550px) {
-    .officehours{
-       width: 100vw;
-       height: 50vh;
-   }
- } */
- #mainHeading {
-     position: relative;
-     width: 70%;
-     text-align: center;
+
+body{
+  /* font-size: 1.5em; */
+  /* display: flex; */
+  /* position:relative; */
+  color: darkred;
+  height: 100vh;
+  width: 100vw;
+  margin:0;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  background-image: url("./../imgs/autumn-background-natural-leaves-bright-sunlight-eps-vector-file-136758009.jpg");
+  background-repeat: repeat-y;
+
+  background-size: cover;
+  font-family:'Lemonada', cursive; 
+  align-items: center;
+}
+body>div {
+  position:fixed;background-color: rgba(255, 255, 255, 0.5); top:0; left:0; width:100%; height:100%; 
+  overflow-y:auto;
+  overflow-x: hidden;
+} 
+ 
+ 
+ #mainHeading { 
+   width: 70%;
+   text-align: center;
+   margin-left: 20vw;
+   margin-top: 0;
+     /* position: relative;
+     
      top: 30%;
-     margin: 20vw;
+     
      bottom: 50%;
-     margin-top: 0;
-     margin-bottom: 0;
+     margin-top: -10px;
+     margin-bottom: 0; */
  }
+
+body>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+ main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  width: 99vw;
+  background:rgba(228, 195, 151, 0.829);
+  /* min-height: 35vh; */
+  padding: 15px;
+
+ }
+ main > .announcements {
+   background: rgba(255, 255, 255, 0.918);
+   border-radius: 10px;
+   width: 85vw;
+   min-height: 60vh;
+ }
+ h1{
+  font-size: 4.5vw;
+  font-weight: 300;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+margin: 0;
+}
+header{
+  /* display: block; */
+  position: relative;
+  margin-bottom: 50px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  min-height: 100px;
+ 
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top:0;
+padding: 10px;
+margin-bottom: 5px;
+  background: rgba(236, 166, 14, 0.651);
+}
+nav a{
+  
+  color: brown;
+  text-decoration: none;
+  background: blanchedalmond;
+  border: rgba(165, 42, 42, 0.473) 2px solid;
+  border-radius: 35%;
+ 
+  padding: 5px;
+}
+@media only screen and (max-width:1100px) {
+  nav{
+    margin-bottom: 55px;
+  }
+  
+}
+@media only screen and (min-width:800px) {
+  nav a {
+    width:25vw;
+    margin-right: 1vw;
+  }
+}
+
+@media only screen and (min-width:1500px) {
+  h1{
+    font-size: 3.7vw;
+  }
+}

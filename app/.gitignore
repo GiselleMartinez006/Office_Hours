@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-
+# production - netlify needs this folder but .ignore ate it! 
+# /build
 
 # misc
 .DS_Store
